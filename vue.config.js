@@ -15,9 +15,9 @@ module.exports = {
         // 设置代理
         proxy: {
             '/api': {
-                target: 'http://api.zhuishushenqi.com',
+                target: 'http://api.zhuishushenqi.com', //要跨域的url
                 ws: true,
-                changeOrigin: true,
+                changeOrigin: true, //是否跨域
                 pathRewrite: {
                     '^/api': ''
                 }
